@@ -6,8 +6,9 @@
 //		- Airplane / Flight (one Flight/plane only in dev 1.0)
 //				- Plane Name (what company made/owns the plane, EX. Air Canada, Dubai Air)
 //				- Flight Number (Destination code)
+//				- Capacity
 //				- Seat availability
-//				- Passengers
+//					- Passengers
 //						- Flight Class (Economy, Business, **First class (depending on flight)**) 
 //						- Name First and Last Name
 //						- Seat Number (Rows: A,B,C,etc...)(4 or 6 seats per row)
