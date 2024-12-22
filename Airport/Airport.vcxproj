@@ -127,7 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="airplane.c" />
+    <ClCompile Include="displayUI.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="passenger.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="airplane.h" />
+    <ClInclude Include="displayUI.h" />
+    <ClInclude Include="passenger.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
