@@ -27,10 +27,15 @@ Dev Update 1.0.0: Dec 21, 2024
 Dev Update 1.1.0: Dec 22, 2024
 - Basic Tombstone signature
 - Commented requirements into main.c and top of README
-- Created:
+- Created: (Empty Files)
   - displayUI.c, displayUI.h
   - airplane.c, airplane.h
   - passenger.c, passenger.h
+- Included:
+  - globals.h
+  - utils.h, utils.c (utils library used in previous projects)
+- Completed:
+  - Passenger ADT
    
 
   
