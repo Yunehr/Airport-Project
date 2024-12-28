@@ -32,5 +32,5 @@ PASSENGER ReadPassengerFromFile(FILE* fp);
 void DestroyPassenger(PASSENGER Passenger);
 
 // Other
-bool CompareStudent(PASSENGER lhs, PASSENGER rhs);
-void PrintStudent(PASSENGER Passenger);
+bool ComparePassenger(PASSENGER lhs, PASSENGER rhs);
+void PrintPassenger(PASSENGER Passenger);

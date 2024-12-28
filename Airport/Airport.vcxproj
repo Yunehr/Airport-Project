@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="airplane.c" />
     <ClCompile Include="displayUI.c" />
+    <ClCompile Include="flightSeating.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="passenger.c" />
     <ClCompile Include="utils.c" />
@@ -136,6 +137,7 @@
   <ItemGroup>
     <ClInclude Include="airplane.h" />
     <ClInclude Include="displayUI.h" />
+    <ClInclude Include="flightSeating.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="passenger.h" />
     <ClInclude Include="utils.h" />
