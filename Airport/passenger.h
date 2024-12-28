@@ -7,17 +7,15 @@
 //		- Name First and Last Name
 //		- Seat Number (Rows: A,B,C,etc...)(4 or 6 seats per row)
 
-#include "globals.h"
 #include <stdbool.h>
 #include <stdio.h>
+#include "globals.h"
 
 typedef struct passenger {
 	// int seatNum;
 	char name[MAX_NAME];
-	//TYPE type;
 } PASSENGER;
 
-// typedef enum type { ECON, BUS } TYPE;
 
 //C - Create
 PASSENGER CreatePassenger(char* Name);
@@ -32,5 +30,5 @@ PASSENGER ReadPassengerFromFile(FILE* fp);
 void DestroyPassenger(PASSENGER Passenger);
 
 // Other
-bool CompareStudent(PASSENGER lhs, PASSENGER rhs);
-void PrintStudent(PASSENGER Passenger);
+bool ComparePassenger(PASSENGER lhs, PASSENGER rhs);
+void PrintPassenger(PASSENGER Passenger);

@@ -18,9 +18,16 @@
 //		- change seating arrangement (when displaying seats have X for in use and O for available)
 //		- Book multiple seats, and select which seats to book (set a max of 5 seats per reservation)
 
+
 #include <stdio.h>
+#include "passenger.h"
+#include "airplane.h"
 
 int main(void) {
+	PASSENGER tempPass = CreatePassenger("Ryan Hackbart");
+	PrintPassenger(tempPass);
 
+	SEATS tempSeat = CreateSeat(0, tempPass);
+	PrintSeat(tempSeat);
 	return 0;
 }

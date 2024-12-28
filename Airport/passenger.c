@@ -2,16 +2,16 @@
 
 // Implementation of passenger ADT
 
-#include "passenger.h"
-#include "utils.h"
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
 #include <stdlib.h>
+#include "passenger.h"
+#include "utils.h"
+
 
 //C - Create
 PASSENGER CreatePassenger(char* Name) {
-	PASSENGER newPassenger;
+	PASSENGER newPassenger = { 0 };
 
 	strncpy(newPassenger.name, Name, MAX_NAME); 
 	CleanNewLineFromString(newPassenger.name);		// validation to keep name proper
@@ -44,10 +44,10 @@ void DestroyPassenger(PASSENGER Passenger) {	// not really needed in higher up v
 }
 
 // Other
-bool CompareStudent(PASSENGER lhs, PASSENGER rhs) {
-	return (lhs.name == rhs.name);
+bool ComparePassenger(PASSENGER lhs, PASSENGER rhs) {
+	return strncmp(lhs.name, rhs.name, MAX_NAME) == 0;
 }
 
-void PrintStudent(PASSENGER Passenger) {
+void PrintPassenger(PASSENGER Passenger) {
 	printf("Passenger Name: %s\n", Passenger.name);
 }
