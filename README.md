@@ -38,9 +38,11 @@ Dev Update 1.1.0: Dec 22, 2024
   - Passenger ADT
    
 Dev Update 1.2.0: Dec 28, 2024
+
 Completed:
 - airplane seating ADT
   - flightSeat.c/.h files for use in main
+
 BUGFIX:
 - fixed minor error that caused build failure
 
