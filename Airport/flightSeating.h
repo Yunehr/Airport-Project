@@ -22,8 +22,12 @@ typedef struct seats {
 SEATS CreateSeat(int seatNum, PASSENGER p);
 
 //R - Read
+bool WriteSeatStatusToFile(FILE* fp, int Status);
+int GetSeatStatusFromFile(FILE* fp);
+
 bool WriteSeatToFile(FILE* fp, SEATS s);
-SEATS ReadSeatFromFile(FILE* fp);
+SEATS ReadSeatFromFile(FILE* fp, int i);
+
 
 //U - Update
 

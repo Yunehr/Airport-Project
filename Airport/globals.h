@@ -4,3 +4,4 @@
 // this file will contain global constants
 
 #define MAX_NAME	60
+#define MAX_STATUS	10
