@@ -4,19 +4,10 @@
 // Airplane ADT
 
 
-#include "passenger.h"
 
-typedef struct airplane {
-	//nameofplane
-	//destination code
-	//seat capacity
-	//seats					//try to implement passenger into a linked list before continuing
-} AIRPLANE;
-
-//typedef struct seats {
-//	int seatnum;
-//	STATUS status;
-//	// PASSENGER passenger;			//this feels wrong to have here
-//} SEATS;
-//
-//typedef enum status { EMPTY, FILLED } STATUS;
+//typedef struct airplane {
+//	//nameofplane
+//	//destination code
+//	//seat capacity
+//	//seats					//try to implement passenger into a linked list before continuing
+//} AIRPLANE;

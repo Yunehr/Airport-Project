@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 // Yuneh - Fall/Winter 2024/25 - Airport Project
 
 // Implementation of passenger ADT
@@ -44,10 +45,10 @@ void DestroyPassenger(PASSENGER Passenger) {	// not really needed in higher up v
 }
 
 // Other
-bool CompareStudent(PASSENGER lhs, PASSENGER rhs) {
-	return (lhs.name == rhs.name);
+bool ComparePassenger(PASSENGER lhs, PASSENGER rhs) {
+	return strncmp(lhs.name, rhs.name, MAX_NAME);
 }
 
-void PrintStudent(PASSENGER Passenger) {
+void PrintPassenger(PASSENGER Passenger) {
 	printf("Passenger Name: %s\n", Passenger.name);
 }
