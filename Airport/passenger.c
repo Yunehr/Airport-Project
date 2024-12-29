@@ -19,6 +19,9 @@ PASSENGER CreatePassenger(char* Name) {
 
 	return newPassenger;
 }
+PASSENGER CopyPassenger(PASSENGER src) {
+	return CreatePassenger(src.name);
+}
 
 //R - Read
 bool WritePassengerToFile(FILE* fp, PASSENGER p) {

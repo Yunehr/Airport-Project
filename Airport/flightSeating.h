@@ -20,6 +20,7 @@ typedef struct seats {
 
 //C - Create
 SEATS CreateSeat(int seatNum, PASSENGER p);
+SEATS CopySeat(SEATS src);
 
 //R - Read
 bool WriteSeatStatusToFile(FILE* fp, int Status);

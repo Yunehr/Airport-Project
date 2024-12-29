@@ -33,6 +33,9 @@
     <ClCompile Include="flightSeating.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="seatingList.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="airplane.h">
@@ -51,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="flightSeating.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="seatingList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

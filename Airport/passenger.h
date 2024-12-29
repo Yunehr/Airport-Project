@@ -21,6 +21,7 @@ typedef struct passenger {
 
 //C - Create
 PASSENGER CreatePassenger(char* Name);
+PASSENGER CopyPassenger(PASSENGER src);
 
 //R - Read
 bool WritePassengerToFile(FILE* fp, PASSENGER p);

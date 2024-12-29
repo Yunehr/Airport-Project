@@ -20,15 +20,24 @@
 
 #include "passenger.h"
 #include "flightSeating.h"
+#include "seatingList.h"
 #include <stdio.h>
 
 
 int main(void) {
+	printf("CREATING PASSENGER INDIVIDUALLY\n");
 	PASSENGER newPassenger = CreatePassenger("Ryan Hackbart\n");
-	//PrintPassenger(newPassenger);
+	PrintPassenger(newPassenger);
 
+	printf("CREATING SEAT\n");
 	SEATS newSeat = CreateSeat(0, newPassenger);
 	PrintSeat(newSeat);
+
+	printf("Creating 2 other seats...\n...Adding to linked list\n");
+	PLISTNODE list = NULL;
+	
+	//Add(&newSeat, CreateSeat(1, CreatePassenger("John Doe\n")));
+
 
 	return 0;
 }

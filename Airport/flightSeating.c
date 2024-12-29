@@ -23,6 +23,14 @@ SEATS CreateSeat(int seatNum, PASSENGER p) {
 	return newSeat; 
 }
 
+SEATS CopySeat(SEATS src) {
+	SEATS newSeat = { 0 };
+	newSeat.seatnum = src.seatnum;
+	newSeat.status = src.status;
+	newSeat.passenger = CopyPassenger(src.passenger);
+	return newSeat;
+}
+
 //R - Read
 bool WriteSeatStatusToFile(FILE* fp, int Status) {
 	switch (Status) {

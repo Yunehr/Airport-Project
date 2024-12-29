@@ -132,6 +132,7 @@
     <ClCompile Include="flightSeating.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="passenger.c" />
+    <ClCompile Include="seatingList.c" />
     <ClCompile Include="utils.c" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +141,7 @@
     <ClInclude Include="flightSeating.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="passenger.h" />
+    <ClInclude Include="seatingList.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
