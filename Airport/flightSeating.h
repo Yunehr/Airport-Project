@@ -19,7 +19,8 @@ typedef struct seats {
 } SEATS;
 
 //C - Create
-SEATS CreateSeat(int seatNum, PASSENGER p);
+SEATS CreateSeat(int seatNum);
+SEATS AddPassengerToSeat(int seatNum, PASSENGER p);
 SEATS CopySeat(SEATS src);
 
 //R - Read

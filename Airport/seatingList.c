@@ -43,6 +43,18 @@ bool Remove(PLISTNODE* list, SEATS s) {
 	}
 }
 
+bool Update(PLISTNODE* list, SEATS s) {
+	PLISTNODE current = *list;
+	while (current != NULL) {
+		if (CompareSeats(current->data, s)) {
+			current->data = CopySeat(s);
+			return true;
+		}
+		current = current->next;
+	}
+	return false;
+}
+
 void Display(PLISTNODE list) {
 	PLISTNODE current = list;
 	while (current != NULL) {
@@ -60,14 +72,17 @@ bool WriteListToStream(PLISTNODE list, FILE* fp) {
 	return true;
 }
 
-int GetCountOfSeats(PLISTNODE list) {
-	int count = 0;
+bool AreSeatsFull(PLISTNODE list) {
+	bool availability = true;
 	PLISTNODE current = list;
 	while (current != NULL) {
-		count++;
+		if (current->data.status == EMPTY)
+			availability = false;
 		current = current->next;
+		if (!availability)
+			break;
 	}
-	return count;
+	return availability;
 }
 
 bool Empty(PLISTNODE* list) {

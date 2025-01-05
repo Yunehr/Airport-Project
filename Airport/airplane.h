@@ -18,28 +18,27 @@ typedef struct airplane {
 
 //C - Create
 AIRPLANE CreateAirplane(char* Name, char* Destination, int Capacity);
-bool AddSeatToAirplane(AIRPLANE* a, SEATS s);
-
-bool RemoveSeatFromClassroom(AIRPLANE* plane, SEATS s);
+bool AddSeatToAirplane(AIRPLANE* air, SEATS s);
+bool RemoveSeatFromAirplane(AIRPLANE* air, SEATS s);
+bool UpdateSeatInAirplane(AIRPLANE* air, SEATS s);
 
 //R - Read
-bool WriteAirplaneToFile(AIRPLANE a, char* filename);
-bool ReadAirplaneFromFile(AIRPLANE* a, char* filename);
+bool WriteAirplaneToFile(AIRPLANE air, char* filename);
+AIRPLANE ReadAirplaneFromFile(AIRPLANE* air, char* filename);
 
 //U - Update
-bool UpgradeSeatInAirplane(AIRPLANE* a, SEATS s);
+bool UpgradeSeatInAirplane(AIRPLANE* air, SEATS s);
 
 //D - Delete
-bool EmptyAirplane(AIRPLANE* a);
-void DestroyAirplane(AIRPLANE a);
+bool EmptyAirplane(AIRPLANE* air);
+void DestroyAirplane(AIRPLANE air);
 
 
 // Other
-bool PrintAirplane(AIRPLANE a);
+void PrintAirplane(AIRPLANE air);
 bool CompareAirplane(AIRPLANE lhs, AIRPLANE rhs);
-int GetCountOfSeatsInAirplane(AIRPLANE a);
-bool IsAirplaneFull(AIRPLANE A);
-bool IsAirplaneEmpty(AIRPLANE A);
-bool IsSeatAvailable(AIRPLANE A, SEATS s);
+int GetCountOfSeatsInAirplane(AIRPLANE air);
+bool IsAirplaneFull(AIRPLANE air);
+bool IsAirplaneEmpty(AIRPLANE air);
 
 //bool AddPassengerToSeat(AIRPLANE* a, PASSENGER p, SEATS s); //not sure if this is needed

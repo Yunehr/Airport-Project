@@ -1,0 +1,19 @@
+Boeing 747
+YYZ
+10
+FILLED
+testPassenger2
+EMPTY
+FILLED
+Imogen Temult
+FILLED
+testPassenger
+EMPTY
+EMPTY
+EMPTY
+FILLED
+Jane Doe
+FILLED
+John Doe
+FILLED
+Ryan Hackbart

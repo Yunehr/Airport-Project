@@ -21,23 +21,29 @@
 #include "passenger.h"
 #include "flightSeating.h"
 #include "seatingList.h"
+#include "airplane.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 
 int main(void) {
-	printf("CREATING PASSENGER INDIVIDUALLY\n");
-	PASSENGER newPassenger = CreatePassenger("Ryan Hackbart\n");
-	PrintPassenger(newPassenger);
-
-	printf("CREATING SEAT\n");
-	SEATS newSeat = CreateSeat(0, newPassenger);
-	PrintSeat(newSeat);
-
-	printf("Creating 2 other seats...\n...Adding to linked list\n");
-	PLISTNODE list = NULL;
+	AIRPLANE* air = (AIRPLANE*)malloc(sizeof(AIRPLANE));
+	if (air == NULL) {
+		fprintf(stderr, "error allocating memory\n");
+		return EXIT_FAILURE;
+	}
 	
-	//Add(&newSeat, CreateSeat(1, CreatePassenger("John Doe\n")));
+	AIRPLANE newAirplane = ReadAirplaneFromFile(air, "airplane.txt");
 
 
+	PrintAirplane(newAirplane); // print airplane 
+
+	UpdateSeatInAirplane(&newAirplane, AddPassengerToSeat(10, CreatePassenger("testPassenger2\n")));
+
+	PrintAirplane(newAirplane);
+
+	WriteAirplaneToFile(newAirplane, "airplane.txt"); // write to file
+	
+	free(air); // free memory
 	return 0;
 }
