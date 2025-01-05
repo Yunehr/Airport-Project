@@ -46,7 +46,13 @@ Completed:
 BUGFIX:
 - fixed minor error that caused build failure
 
-  
 
+
+Dev Update 1.3.0: Jan 05, 2025
+
+Completed:
+- airplane ADT
+Notes:
+- working File Reading and writing
 
 
